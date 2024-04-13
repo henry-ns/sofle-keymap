@@ -16,7 +16,7 @@ enum custom_keycodes {
     KC_LSTRT,
     KC_LEND,
     KC_DLINE
-};
+};;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
@@ -103,8 +103,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_RAISE] = LAYOUT(
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       KC_PGUP, KC_PRVWD, XXXXXXX, KC_NXTWD, KC_DLINE, KC_BSPC,
-        _______, KC_SLCT, XXXXXXX, XXXXXXX, XXXXXXX,  KC_CAPS,                       KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT,  KC_DEL,   KC_BSPC,
+        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       KC_PGUP, KC_PRVWD, XXXXXXX, KC_NXTWD, KC_DLINE, KC_DEL,
+        _______, KC_SLCT, XXXXXXX, XXXXXXX, XXXXXXX,  KC_CAPS,                       KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT,  XXXXXXX,  KC_BSPC,
         _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PASTE, XXXXXXX, _______,     _______, KC_PGDN, KC_LSTRT, XXXXXXX, KC_LEND,  XXXXXXX,  _______,
                           _______, _______, _______,  _______, _______,     _______, _______, _______, _______, _______
     ),
@@ -364,5 +364,5 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     }
     return true;
 }
-}
+
 #endif
