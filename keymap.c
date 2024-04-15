@@ -82,10 +82,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LOWER] = LAYOUT(
         KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
         _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                       KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______,
-        _______, _______, KC_GRV,  KC_TILD, KC_DLR,  KC_MINS,                       KC_PLUS, KC_EQL,  KC_BSLS, KC_PIPE, KC_COLN, KC_DQT,
+        _______, _______, KC_GRV,  KC_TILD, KC_UNDS, KC_MINS,                       KC_PLUS, KC_EQL,  KC_BSLS, KC_PIPE, KC_COLN, KC_DQT,
         _______, _______, _______, _______, KC_LCBR, KC_RCBR, _______,     _______, KC_LBRC, KC_RBRC, KC_LT,   KC_GT,   KC_QUES, _______,
-                          _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______
+                          _______, _______, _______, _______, _______,     KC_BSPC, _______, _______, _______, _______
     ),
+
 
     /* RAISE
      * ,----------------------------------------.                     ,-----------------------------------------.
@@ -104,9 +105,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT(
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,                       KC_PGUP, KC_PRVWD, XXXXXXX, KC_NXTWD, KC_DLINE, KC_DEL,
-        _______, KC_SLCT, XXXXXXX, XXXXXXX, XXXXXXX,  KC_CAPS,                       KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT,  XXXXXXX,  KC_BSPC,
+        _______, KC_SLCT, XXXXXXX, XXXXXXX, KC_FIND,  KC_CAPS,                       KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT,  XXXXXXX,  KC_BSPC,
         _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PASTE, XXXXXXX, _______,     _______, KC_PGDN, KC_LSTRT, XXXXXXX, KC_LEND,  XXXXXXX,  _______,
-                          _______, _______, _______,  _______, _______,     _______, _______, _______, _______, _______
+                          _______, _______, _______,  _______, KC_DEL,      _______, _______, _______, _______, _______
     ),
 
     /* ADJUST
